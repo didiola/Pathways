@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/reusable/header";
+import Footer from "./components/reusable/footer";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-Sans",
@@ -20,12 +21,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} antialiased`}>
-        <div className="relative w-screen h-screen overflow-y-auto overflow-x-hidden flex flex-col items-center max-w-[90rem]">
+      <body className={`${dmSans.variable} font-['dm-sans'] antialiased`}>
+        <div className="relative w-screen h-screen overflow-x-hidden max-w-[90rem] flex flex-col">
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
   );
 }
+
+// items-center

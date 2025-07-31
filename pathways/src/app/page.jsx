@@ -2,6 +2,11 @@
 import Image from "next/image";
 import photo from "./assets/image/fdiphoto.png";
 import Brand from "./components/Homepage/brands";
+import Vision from "./components/Homepage/vision";
+import ImageSlider from "./components/reusable/imageslider";
+import Leadership from "./components/Homepage/leadership";
+import Theory from "./components/Homepage/theory";
+import Footer from "./components/reusable/footer";
 
 export default function Home() {
   return (
@@ -19,7 +24,7 @@ export default function Home() {
             We strengthen good governance through our work on developing and
             implementing good policies.
           </p>
-          <div className="flex items-center bg-white rounded-full overflow-hidden w-fit px-2 py-1 mt-10">
+          <div className="flex items-center bg-white rounded-full overflow-hidden w-fit px-2 py-1 mt-12">
             <input
               type="email"
               placeholder="email@address.com"
@@ -38,6 +43,11 @@ export default function Home() {
         </div>
       </div>
       <Brand />
+      <Vision />
+      <ImageSlider />
+      <Leadership />
+      <Theory />
+      <Footer />
     </div>
   );
 }
