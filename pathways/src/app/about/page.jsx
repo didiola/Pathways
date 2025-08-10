@@ -9,16 +9,16 @@ import arinola from "../assets/image/arinola.png";
 export default function About() {
   return (
     <div className="mt-[10rem]">
-      <section className="py-16 border-b-1 border-gray-300">
-        <div className="max-w-5xl mx-18">
-          <h1 className="text-7xl font-bold leading-tight">
+      <section className="md:py-16 py-6 border-b-1 border-gray-300">
+        <div className="md:max-w-5xl md:mx-18 mx-6">
+          <h1 className="md:text-7xl text-3xl font-bold leading-tight">
             Policy towards a <br />
             more prosperous <br />
             Africa
           </h1>
         </div>
       </section>
-      <div className="mt-6 text-sm text-gray-500 flex items-center space-x-2 mx-18">
+      <div className="mt-6 text-sm text-gray-500 flex items-center space-x-2 md:mx-18 mx-6">
         <Link href="/">Home</Link>
         <span>→</span>
         <span className="text-black font-medium">About Us</span>
@@ -33,7 +33,7 @@ export default function About() {
         }
       </div>
       <section className="max-w-5xl mx-auto px-4 mt-12 space-y-6">
-        <div className="py-10 border-t border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
+        <div className="py-10 border-t md:border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
           <h2 className="text-lg font-semibold md:w-1/4">About Us</h2>
           <p className="text-gray-700 md:w-3/4">
             Future Pathways Development Initiative is a pan-African organisation
@@ -46,8 +46,10 @@ export default function About() {
         </div>
 
         <div className="py-10 border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
-          <h2 className="text-lg font-semibold md:w-1/4">Our Mission</h2>
-          <p className="text-gray-700 md:w-3/4">
+          <h2 className="text-lg font-semibold md:w-1/4 md:block hidden">
+            Our Mission
+          </h2>
+          <p className="text-gray-700 md:text-base md:font-normal md:w-3/4 font-bold text-3xl">
             To inspire and strengthen citizen action and engagement in
             <br />
             Africa.
@@ -70,7 +72,7 @@ export default function About() {
           forward-thinking public policies across the African continent.
         </h2>
       </div>
-      <section className="py-12 px-16">
+      <section className="md:py-12 md:px-16 py-6 px-8">
         <h2 className="text-xl font-semibold mb-10">Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <TeamCard

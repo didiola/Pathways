@@ -6,27 +6,27 @@ import hands from "../assets/image/groupie.png";
 
 export default function Contact() {
   return (
-    <div className="mt-[8rem]">
-      <div className="mt-12 text-sm text-gray-500 flex items-center space-x-2 mx-18 border-t border-gray-300">
+    <div className="mt-[10rem] border-t border-gray-300">
+      <div className=" text-sm text-gray-500 flex items-center space-x-2 mx-18 mt-10 mb-6">
         <Link href="/">Home</Link>
         <span>→</span>
         <span className="text-black font-medium">Team</span>
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 ">
         <div>
-          <p className="text-2xl md:text-3xl font-semibold leading-relaxed mb-6">
+          <p className="text-2xl md:text-4xl font-bold leading-relaxed mb-6">
             Have questions or <br />
             interested in learning more <br />
             about FPDI?
           </p>
 
           <div className="flex items-center gap-3 text-gray-800">
-            <Mail className="text-yellow-500" />
+            <Mail className="text-[#A27C00]" />
             <span>
               Email:{" "}
               <a
                 href="mailto:contact@policychanllege.com"
-                className="underline text-blue-700 hover:text-blue-900"
+                className="underline text-[#231F20]"
               >
                 contact@policychanllege.com
               </a>
@@ -34,7 +34,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div>
+        <div className="w-100 h-120">
           <Image src={hands} alt="Teamwork" />
         </div>
       </div>

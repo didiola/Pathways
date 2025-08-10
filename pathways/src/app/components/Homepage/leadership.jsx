@@ -4,7 +4,7 @@ import arinola from "../../assets/image/arinola.png";
 
 export default function Leadership() {
   return (
-    <div className="flex flex-col p-28">
+    <div className="flex flex-col md:p-28 py-10 px-6">
       <div className="text-black mb-8 p-8">
         <h1 className="text-4xl font-semibold">Our Leadership</h1>
       </div>
