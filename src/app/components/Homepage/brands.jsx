@@ -3,7 +3,7 @@ import rlogo from "../../assets/image/reverso.png";
 
 export default function Brand() {
   return (
-    <div className="flex flex-col items-center justify-center md:p-24 p-8">
+    <div className="flex flex-col items-center justify-center md:p-24 p-8 bg-white">
       <div className="text-black md:mb-12 mb-8">
         <p className="md:text-4xl text-2xl font-semibold">
           Brands that partner with us

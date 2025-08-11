@@ -22,7 +22,7 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden mt-20">
+    <div className="relative w-screen h-screen overflow-hidden mt-20 bg-white">
       <div
         className="flex transition-transform duration-500 h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
