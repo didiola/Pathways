@@ -25,14 +25,16 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="mt-[10rem]">
-      <section className="py-16 border-b-1 border-gray-300">
-        <div className="max-w-5xl mx-18">
-          <h1 className="text-7xl font-bold leading-tight">Projects.</h1>
+    <div className="md:mt-[10rem] mt-[5rem]">
+      <section className="md:py-16 py-6 border-b-1 border-gray-300">
+        <div className="max-w-5xl md:mx-18 mx-6">
+          <h1 className="md:text-7xl text-5xl font-bold leading-tight">
+            Projects.
+          </h1>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-1 py-4">
+      <section className="max-w-6xl md:mx-auto mx-6 px-1 py-4">
         <div className="text-sm text-gray-500 mb-10">
           <Link href="/">Home</Link>
           <span>→</span>

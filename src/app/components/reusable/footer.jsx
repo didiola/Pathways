@@ -49,10 +49,10 @@ export default function Footer() {
           <h4 className="font-semibold mb-2 text-[#1A1A1A]">Get Involved</h4>
           <ul className="space-y-1">
             <li>
-              <Link href="/our-works">Our Works</Link>
+              <Link href="/works">Our Works</Link>
             </li>
             <li>
-              <Link href="/careers">Careers</Link>
+              <Link href="/career">Careers</Link>
             </li>
           </ul>
         </div>

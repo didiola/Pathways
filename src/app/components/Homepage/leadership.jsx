@@ -15,6 +15,7 @@ export default function Leadership() {
             title="Founder, FPDI"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
+            linkedinUrl="https://www.linkedin.com/in/arinoladaniel/"
           />
         </div>
         <div className="w-120">
@@ -23,6 +24,7 @@ export default function Leadership() {
             title="Executive Director, FPDI"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
+            linkedinUrl="https://www.linkedin.com/in/arinoladaniel/"
           />
         </div>
       </div>

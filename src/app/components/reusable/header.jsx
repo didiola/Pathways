@@ -19,8 +19,8 @@ export default function Header() {
       href: "/works",
       children: [
         { name: "Events", href: "/works/events" },
-        { name: "Policies", href: "/works/policies" },
         { name: "Projects", href: "/works/projects" },
+        { name: "Policies", href: "/works/policies" },
         { name: "Blog", href: "/works/blog" },
         { name: "Impact Report", href: "/works/impactreport" },
         { name: "TPC Compendium", href: "/works/compendium" },
@@ -28,8 +28,15 @@ export default function Header() {
     },
     { name: "Careers", href: "/career" },
     { name: "Contact Us", href: "/contact" },
-    { name: "Download Brochure", href: "" },
+    {
+      name: "Download Brochure",
+      href: "",
+      external: true,
+      green: true,
+    },
   ];
+
+  const disabledLinks = ["Policies", "Blog", "Impact Report", "TPC Compendium"];
 
   return (
     <header className="absolute top-0 left-0 w-full md:py-4 md:px-[4.375rem] z-[50]">
@@ -67,15 +74,25 @@ export default function Header() {
 
                   <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow rounded mt-1 z-50">
                     <div className="flex flex-col min-w-[150px] py-2">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-100"
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
+                      {link.children.map((child) => {
+                        const isDisabled = disabledLinks.includes(child.name);
+                        return isDisabled ? (
+                          <span
+                            key={child.name}
+                            className="block px-4 py-2 text-sm text-gray-400 cursor-not-allowed"
+                          >
+                            {child.name}
+                          </span>
+                        ) : (
+                          <Link
+                            key={child.name}
+                            href={child.href}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:text-black hover:bg-gray-100"
+                          >
+                            {child.name}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -83,8 +100,12 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className={`${
-                    pathname === link.href
+                    link.green
+                      ? "text-green-600 font-semibold"
+                      : pathname === link.href
                       ? "font-bold text-black"
                       : "text-gray-600"
                   } hover:text-black transition`}

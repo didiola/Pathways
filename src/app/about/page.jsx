@@ -8,7 +8,7 @@ import arinola from "../assets/image/arinola.png";
 
 export default function About() {
   return (
-    <div className="mt-[10rem]">
+    <div className="md:mt-[10rem] mt-[5rem]">
       <section className="md:py-16 py-6 border-b-1 border-gray-300">
         <div className="md:max-w-5xl md:mx-18 mx-6">
           <h1 className="md:text-7xl text-3xl font-bold leading-tight">
