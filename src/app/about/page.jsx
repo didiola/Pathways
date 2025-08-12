@@ -79,13 +79,13 @@ export default function About() {
           <TeamCard
             name="Ayokunnu Ojeniyi"
             title="Founder, FPDI"
-            bio="Dr. Ayokunnu is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            bio="Ayokunnu Ojeniyi is a public policy expert, entrepreneur, and nation-builder with over a decade of experience driving systems-level reform across Nigeria’s public and private sectors."
             imgSrc={ayokunnu}
           />
           <TeamCard
             name="Arinola Addo Daniel"
             title="Executive Director, FPDI"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            bio="Arinola stand at the intersection of policy, people, projects and products. An emerging leader who has frontier many enterprises, He streamlines work plans, programs, and end-to-end processes in nonprofits, municipal governments, startups, and education."
             imgSrc={arinola}
           />
           {/* <TeamCard

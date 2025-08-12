@@ -28,7 +28,7 @@ export default function Contact() {
                 href="mailto:contact@policychanllege.com"
                 className="underline text-[#231F20]"
               >
-                contact@policychanllege.com
+                info@futurepathways.africa
               </a>
             </span>
           </div>
