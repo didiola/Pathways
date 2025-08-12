@@ -30,7 +30,7 @@ export default function Header() {
     { name: "Contact Us", href: "/contact" },
     {
       name: "Download Brochure",
-      href: "",
+      href: "https://drive.google.com/file/d/1BiK-EwbJM8LRiwsB73e1JIZKQ3NT1Fsv/view?usp=sharing",
       external: true,
       green: true,
     },

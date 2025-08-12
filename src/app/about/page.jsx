@@ -5,6 +5,7 @@ import hands from "../assets/image/fdiphoto.png";
 import { Quote } from "lucide-react";
 import TeamCard from "../components/reusable/teamcard";
 import arinola from "../assets/image/arinola.png";
+import ayokunnu from "../assets/image/ayokunnu.jpeg";
 
 export default function About() {
   return (
@@ -78,8 +79,8 @@ export default function About() {
           <TeamCard
             name="Ayokunnu Ojeniyi"
             title="Founder, FPDI"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
-            imgSrc={arinola}
+            bio="Dr. Ayokunnu is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            imgSrc={ayokunnu}
           />
           <TeamCard
             name="Arinola Addo Daniel"
@@ -87,18 +88,18 @@ export default function About() {
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
           />
-          <TeamCard
+          {/* <TeamCard
             name="Chimchetaram Chuka-Okoli"
             title="Communications Lead"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
-          />
-          <TeamCard
+          /> */}
+          {/* <TeamCard
             name="Peter Joshua Nwali"
             title="Associate"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
-          />
+          /> */}
         </div>
       </section>
     </div>

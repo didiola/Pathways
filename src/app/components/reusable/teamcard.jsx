@@ -11,7 +11,7 @@ export default function TeamCard({ name, title, bio, imgSrc, linkedinUrl }) {
             src={imgSrc}
             alt={name}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <div className="bg-gray-200 w-full h-full rounded-xl z-0 " />

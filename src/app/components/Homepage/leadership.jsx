@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TeamCard from "../reusable/teamcard";
 import arinola from "../../assets/image/arinola.png";
+import ayokunnu from "../../assets/image/ayokunnu.jpeg";
 
 export default function Leadership() {
   return (
@@ -13,9 +14,10 @@ export default function Leadership() {
           <TeamCard
             name="Ayokunnu Ojeniyi"
             title="Founder, FPDI"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
-            imgSrc={arinola}
-            linkedinUrl="https://www.linkedin.com/in/arinoladaniel/"
+            bio="Dr. Ayokunnu is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            imgSrc={ayokunnu}
+            linkedinUrl="https://www.linkedin.com/in/ayokunnu-ojeniyi
+            "
           />
         </div>
         <div className="w-120">
