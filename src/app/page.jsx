@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import photo from "./assets/image/fdiphoto.png";
+import photo from "./assets/image/fdiphoto.jpeg";
 import Brand from "./components/Homepage/brands";
 import Vision from "./components/Homepage/vision";
 import ImageSlider from "./components/reusable/imageslider";
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         {/* top-[50%] absolute max-w-[780px] px-[4.375rem] */}
         <div className="absolute md:top-[50%] md:px-[4.375rem] max-w-[780px] w-full px-6 top-1/2">
-          <p className="text-white md:text-4xl sm:text-3xl md:font-bold font-semibold text-2xl mb-10">
+          <p className="text-black md:text-4xl sm:text-3xl md:font-bold font-semibold text-2xl mb-10">
             Advancing governance reforms and equipping institutions and citizens
             with the tools to co-create policy solutions that work.
           </p>

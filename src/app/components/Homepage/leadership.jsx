@@ -24,7 +24,7 @@ export default function Leadership() {
           <TeamCard
             name="Arinola Addo Daniel"
             title="Executive Director, FPDI"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            bio="Arinola stand at the intersection of policy, people, projects and products. An emerging leader who has frontier many enterprises, He streamlines work plans, programs, and end-to-end processes in nonprofits, municipal governments, startups, and education."
             imgSrc={arinola}
             linkedinUrl="https://www.linkedin.com/in/arinoladaniel/"
           />
