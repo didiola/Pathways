@@ -5,10 +5,11 @@ import hands from "../assets/image/fdiphoto.png";
 import { Quote } from "lucide-react";
 import TeamCard from "../components/reusable/teamcard";
 import arinola from "../assets/image/arinola.png";
+import ayokunnu from "../assets/image/ayokunnu.jpeg";
 
 export default function About() {
   return (
-    <div className="mt-[10rem]">
+    <div className="md:mt-[10rem] mt-[5rem]">
       <section className="md:py-16 py-6 border-b-1 border-gray-300">
         <div className="md:max-w-5xl md:mx-18 mx-6">
           <h1 className="md:text-7xl text-3xl font-bold leading-tight">
@@ -78,8 +79,8 @@ export default function About() {
           <TeamCard
             name="Ayokunnu Ojeniyi"
             title="Founder, FPDI"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
-            imgSrc={arinola}
+            bio="Dr. Ayokunnu is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            imgSrc={ayokunnu}
           />
           <TeamCard
             name="Arinola Addo Daniel"
@@ -87,18 +88,18 @@ export default function About() {
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
           />
-          <TeamCard
+          {/* <TeamCard
             name="Chimchetaram Chuka-Okoli"
             title="Communications Lead"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
-          />
-          <TeamCard
+          /> */}
+          {/* <TeamCard
             name="Peter Joshua Nwali"
             title="Associate"
             bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
             imgSrc={arinola}
-          />
+          /> */}
         </div>
       </section>
     </div>

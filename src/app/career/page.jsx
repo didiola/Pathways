@@ -4,13 +4,15 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Career() {
   return (
-    <div className="mt-[10rem]">
-      <section className="py-16 border-b-1 border-gray-300">
-        <div className="max-w-5xl mx-18 mb-8">
-          <h1 className="text-7xl font-bold leading-tight">Join the team.</h1>
+    <div className="md:mt-[10rem] mt-[5rem]">
+      <section className="md:py-16 py-6 border-b-1 border-gray-300">
+        <div className="md:max-w-5xl md:mx-18 mx-6 md:mb-8">
+          <h1 className="md:text-7xl text-4xl font-bold leading-tight">
+            Join the team.
+          </h1>
         </div>
       </section>
-      <div className="mt-6 text-sm text-gray-500 flex items-center space-x-2 mx-18">
+      <div className="mt-6 text-sm text-gray-500 flex items-center space-x-2 md:mx-18 mx-6">
         <Link href="/">Home</Link>
         <span>→</span>
         <span className="text-black font-medium">Careers</span>
@@ -23,16 +25,16 @@ export default function Career() {
           </h2>
         </div>
         <h1 className="font-bold text-4xl mt-20 mb-8">Volunteer</h1>
-        <div className="py-6 border-t border-gray-300 flex flex-row md:space-x-6">
-          <h2 className="text-base text-[#231F20] md:w-1/4">
+        <div className="py-6 border-t border-gray-300 flex md:flex-row flex-col md:space-x-6">
+          <h2 className="text-base text-[#231F20] md:w-1/4 mb-6">
             Current openings
           </h2>
           <div className="">
-            <h2 className="text-base text-[#231F20] font-semibold mb-6">
+            <h2 className="text-base text-[#231F20] font-semibold md:mb-6 mb-4">
               Policy Hubs Campus Ambassador
             </h2>
             <a
-              href=""
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeWHEDNCaGd9Mkzjzcw5FVV261Qy8WX_nnq7I-qEJ1Awx4Oeg/viewform"
               target="_blank"
               className="bg-gradient-to-r from-green-600 to-green-500 border border-white hover:opacity-90 transition text-white rounded-full py-3 px-5 inline-flex items-center gap-2"
             >

@@ -21,8 +21,8 @@ export default function Home() {
         {/* top-[50%] absolute max-w-[780px] px-[4.375rem] */}
         <div className="absolute md:top-[50%] md:px-[4.375rem] max-w-[780px] w-full px-6 top-1/2">
           <p className="text-white md:text-4xl sm:text-3xl md:font-bold font-semibold text-2xl mb-10">
-            We strengthen good governance through our work on developing and
-            implementing good policies.
+            Advancing governance reforms and equipping institutions and citizens
+            with the tools to co-create policy solutions that work.
           </p>
 
           {/* Desktop */}

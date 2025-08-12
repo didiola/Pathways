@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa";
 
-export default function TeamCard({ name, title, bio, imgSrc }) {
+export default function TeamCard({ name, title, bio, imgSrc, linkedinUrl }) {
   return (
     <div className="w-full relative group overflow-hidden rounded-xl shadow-lg">
       {/* Image */}
@@ -10,7 +11,7 @@ export default function TeamCard({ name, title, bio, imgSrc }) {
             src={imgSrc}
             alt={name}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <div className="bg-gray-200 w-full h-full rounded-xl z-0 " />
@@ -22,9 +23,21 @@ export default function TeamCard({ name, title, bio, imgSrc }) {
       </div>
 
       {/* Text */}
-      <div className="p-3 bg-white">
-        <h3 className="font-semibold text-lg">{name}</h3>
-        <p className="text-sm text-gray-500">{title}</p>
+      <div className="p-3 bg-white flex items-center justify-between">
+        <div>
+          <h3 className="font-semibold text-lg">{name}</h3>
+          <p className="text-sm text-gray-500">{title}</p>
+        </div>
+        {linkedinUrl && (
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-[#0077B5]"
+          >
+            <FaLinkedin size={20} />
+          </a>
+        )}
       </div>
     </div>
   );
