@@ -14,7 +14,7 @@ export default function Leadership() {
           <TeamCard
             name="Ayokunnu Ojeniyi"
             title="Founder, FPDI"
-            bio="Dr. Ayokunnu is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
+            bio="Ayokunnu Ojeniyi is a public policy expert, entrepreneur, and nation-builder with over a decade of experience driving systems-level reform across Nigeria’s public and private sectors."
             imgSrc={ayokunnu}
             linkedinUrl="https://www.linkedin.com/in/ayokunnu-ojeniyi
             "
