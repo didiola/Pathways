@@ -1,6 +1,6 @@
 import Image from "next/image";
 import TeamCard from "../reusable/teamcard";
-import arinola from "../../assets/image/arinola.png";
+import arinola from "../../assets/image/addo.jpg";
 import ayokunnu from "../../assets/image/ayokunnu.jpeg";
 
 export default function Leadership() {

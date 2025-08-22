@@ -14,7 +14,7 @@ export default function Theory() {
                 "Provide platforms for continuous learning, dialogue, and co-creation",
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1 w-2 h-2 rounded-full bg-black inline-block" />
+                  <span className="mt-2 w-2 h-2 rounded-full bg-black inline-block" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -29,7 +29,7 @@ export default function Theory() {
                 "Catalyze a governance culture rooted in accountability, innovation, and equity",
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="mt-1 w-2 h-2 rounded-full bg-black inline-block" />
+                  <span className="mt-2 w-2 h-2 rounded-full bg-black inline-block" />
                   <span>{item}</span>
                 </li>
               ))}

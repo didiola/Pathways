@@ -14,16 +14,19 @@ export default function Footer() {
             <Image src={logo} alt="FPDI logo" />
           </div>
           <div className="flex space-x-10 mt-4 text-gray-800">
-            <a href="#">
+            <a href="https://www.instagram.com/fpdiafrica/" target="_blank">
               <FaInstagram size={20} />
             </a>
-            <a href="#">
+            <a href="https://x.com/FPDIAfrica" target="_blank">
               <FaTwitter size={20} />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/future-pathways-development-initiative/"
+              target="_blank"
+            >
               <FaLinkedin size={20} />
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@fpdiafrica" target="_blank">
               <FaYoutube size={20} />
             </a>
           </div>
@@ -90,7 +93,7 @@ export default function Footer() {
               href="mailto:contact@policychanllenge.com"
               className="text-green-700"
             >
-              contact@policychanllenge.com
+              arinola@policychallenge.com
             </a>
           </div>
         </div>
