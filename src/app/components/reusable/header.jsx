@@ -20,7 +20,10 @@ export default function Header() {
       children: [
         { name: "Events", href: "/works/events" },
         { name: "Projects", href: "/works/projects" },
-        { name: "Policies", href: "/works/policies" },
+        {
+          name: "Policy Challenge",
+          href: "https://www.policychallenge.com/",
+        },
         { name: "Blog", href: "/works/blog" },
         { name: "Impact Report", href: "/works/impactreport" },
         { name: "TPC Compendium", href: "/works/compendium" },
@@ -36,7 +39,7 @@ export default function Header() {
     },
   ];
 
-  const disabledLinks = ["Policies", "Blog", "Impact Report", "TPC Compendium"];
+  const disabledLinks = ["Blog", "Impact Report", "TPC Compendium"];
 
   return (
     <header className="absolute top-0 left-0 w-full md:py-4 md:px-[4.375rem] z-[50]">

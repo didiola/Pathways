@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import hands from "../assets/image/fdiphoto.png";
+import team from "../assets/image/team.jpg";
 import { Quote } from "lucide-react";
 import TeamCard from "../components/reusable/teamcard";
-import arinola from "../assets/image/arinola.png";
+import arinola from "../assets/image/addo.jpg";
 import ayokunnu from "../assets/image/ayokunnu.jpeg";
 
 export default function About() {
@@ -27,8 +27,8 @@ export default function About() {
       <div className="mt-10 ">
         {
           <Image
-            src={hands}
-            alt="hands joined together"
+            src={team}
+            alt="members of the company in a photograph"
             className="object-cover object-center"
           />
         }
@@ -40,9 +40,9 @@ export default function About() {
             Future Pathways Development Initiative is a pan-African organisation
             established to inspire reforms and equip governance outcomes through
             policy towards a more prosperous Africa. Established in 2022, FPDI
-            is set to reach all 54 countries in Africa, with one purpose, to
-            (...). We are independent of any political ideology, economic
-            interest or religion.
+            is set to reach all 54 countries in Africa, transcending political
+            ideologies, economic interests, and religious affiliations to shape
+            a more inclusive, accountable, and prosperous continent.
           </p>
         </div>
 
@@ -51,9 +51,7 @@ export default function About() {
             Our Mission
           </h2>
           <p className="text-gray-700 md:text-base md:font-normal md:w-3/4 font-bold text-3xl">
-            To inspire and strengthen citizen action and engagement in
-            <br />
-            Africa.
+            To inspire and strengthen citizen action and engagement in Africa.
           </p>
         </div>
 
@@ -63,6 +61,17 @@ export default function About() {
             We strengthen good governance through our work
             <br />
             on developing and implementing good policies.
+          </p>
+        </div>
+        <div className="py-10 border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
+          <h2 className="text-lg font-semibold md:w-1/4">
+            Our Target Audience
+          </h2>
+          <p className="text-gray-700 md:w-3/4">
+            Our primary constituency is youth, defined as individuals between
+            the <br />
+            ages of 15 and 35 years who are passionate about governance, <br />
+            public leadership, and policy reform
           </p>
         </div>
       </section>

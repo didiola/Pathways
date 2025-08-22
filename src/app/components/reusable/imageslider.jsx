@@ -1,13 +1,22 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import photo from "../../assets/image/fdiphoto.png";
-// import photo from "@/assets/image/fdiphoto.png";
+import jumoke from "../../assets/image/jumoke.jpg";
+import founder from "../../assets/image/founder.jpg";
+import director from "../../assets/image/director.jpg";
+import panel from "../../assets/image/panel.jpg";
+import teamone from "../../assets/image/teamone.jpg";
+import teamtwo from "../../assets/image/teamtwo.jpg";
+import teamthree from "../../assets/image/teamthree.jpg";
 
 const images = [
-  { src: photo, alt: "first slide" },
-  { src: photo, alt: "second slide" },
-  { src: photo, alt: "third slide" },
+  { src: jumoke, alt: "first slide" },
+  { src: founder, alt: "second slide" },
+  { src: director, alt: "third slide" },
+  { src: panel, alt: "fourth slide" },
+  { src: teamone, alt: "fifth slide" },
+  { src: teamtwo, alt: "sixth slide" },
+  { src: teamthree, alt: "seventh slide" },
 ];
 
 export default function ImageSlider() {
