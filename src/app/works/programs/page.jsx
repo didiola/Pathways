@@ -9,21 +9,21 @@ const projects = [
   {
     title: "The Policy Challenge",
     image: hands,
-    href: "/works/projects/the-policy-challenge",
+    href: "/works/programs/the-policy-challenge",
   },
   {
     title: "School Summit",
     image: hands,
-    href: "/works/projects/school-summit",
+    href: "/works/programs/school-summit",
   },
   {
     title: "Playbook for Startups & SMEs",
     image: hands,
-    href: "/works/projects/startups-smes-playbook",
+    href: "/works/programs/startups-smes-playbook",
   },
 ];
 
-export default function Projects() {
+export default function Programs() {
   return (
     <div className="md:mt-[10rem] mt-[5rem]">
       <section className="md:py-16 py-6 border-b-1 border-gray-300">

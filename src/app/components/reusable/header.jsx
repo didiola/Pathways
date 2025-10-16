@@ -19,14 +19,14 @@ export default function Header() {
       href: "/works",
       children: [
         { name: "Events", href: "/works/events" },
-        { name: "Projects", href: "/works/projects" },
-        {
-          name: "Policy Challenge",
-          href: "https://www.policychallenge.com/",
-        },
-        { name: "Blog", href: "/works/blog" },
-        { name: "Impact Report", href: "/works/impactreport" },
-        { name: "TPC Compendium", href: "/works/compendium" },
+        { name: "Programs", href: "/works/programs" },
+        // {
+        //   name: "Policy Challenge",
+        //   href: "https://www.policychallenge.com/",
+        // },
+        // { name: "Blog", href: "/works/blog" },
+        // { name: "Impact Report", href: "/works/impactreport" },
+        // { name: "TPC Compendium", href: "/works/compendium" },
       ],
     },
     { name: "Careers", href: "/career" },

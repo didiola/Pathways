@@ -93,7 +93,7 @@ export default function Footer() {
               href="mailto:contact@policychanllenge.com"
               className="text-green-700"
             >
-              arinola@policychallenge.com
+              info@futurepathways.ng
             </a>
           </div>
         </div>
