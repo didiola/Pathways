@@ -17,7 +17,7 @@ export default function TeamCard({ name, title, bio, imgSrc, linkedinUrl }) {
           <div className="bg-gray-200 w-full h-full rounded-xl z-0 " />
         )}
         {/* Bio Overlay */}
-        <div className="absolute inset-0 bg-[#F4C06B] text-black p-4 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex items-center justify-center text-sm text-center z-10">
+        <div className="absolute inset-0 bg-[#F4C06B] text-black p-4 opacity-0 group-hover:opacity-95 transition-opacity duration-300 flex items-center justify-start text-sm z-10">
           <p>{bio}</p>
         </div>
       </div>

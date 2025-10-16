@@ -6,6 +6,7 @@ import { Quote } from "lucide-react";
 import TeamCard from "../components/reusable/teamcard";
 import arinola from "../assets/image/addo.jpg";
 import ayokunnu from "../assets/image/ayokunnu.jpeg";
+import cheta from "../assets/image/cheta.jpg";
 
 export default function About() {
   return (
@@ -47,17 +48,15 @@ export default function About() {
         </div>
 
         <div className="py-10 border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
-          <h2 className="text-lg font-semibold md:w-1/4 md:block hidden">
-            Our Mission
-          </h2>
-          <p className="text-gray-700 md:text-base md:font-normal md:w-3/4 font-bold text-3xl">
+          <h2 className="text-lg font-semibold md:w-1/4">Our Mission</h2>
+          <p className="text-gray-700 md:w-[75%]">
             To inspire and strengthen citizen action and engagement in Africa.
           </p>
         </div>
 
         <div className="py-10 border-b border-gray-300 flex flex-col md:flex-row md:space-x-6">
           <h2 className="text-lg font-semibold md:w-1/4">Our Vision</h2>
-          <p className="text-gray-700 md:w-3/4">
+          <p className="text-gray-700 md:w-[75%]">
             We strengthen good governance through our work
             <br />
             on developing and implementing good policies.
@@ -67,7 +66,7 @@ export default function About() {
           <h2 className="text-lg font-semibold md:w-1/4">
             Our Target Audience
           </h2>
-          <p className="text-gray-700 md:w-3/4">
+          <p className="text-gray-700 md:w-[75%]">
             Our primary constituency is youth, defined as individuals between
             the <br />
             ages of 15 and 35 years who are passionate about governance, <br />
@@ -97,12 +96,12 @@ export default function About() {
             bio="Arinola stand at the intersection of policy, people, projects and products. An emerging leader who has frontier many enterprises, He streamlines work plans, programs, and end-to-end processes in nonprofits, municipal governments, startups, and education."
             imgSrc={arinola}
           />
-          {/* <TeamCard
+          <TeamCard
             name="Chimchetaram Chuka-Okoli"
-            title="Communications Lead"
-            bio="Arinola is a People Policy and Governance Specialist, Human Capital Strategist, Civic Engagement Advocate, Leadership Coach, Public Sector Reformer..."
-            imgSrc={arinola}
-          /> */}
+            title="Director of Communications"
+            bio="Chimchetaram is a Communications and Governance Specialist, Human Capital Strategist, Civic Engagement."
+            imgSrc={cheta}
+          />
           {/* <TeamCard
             name="Peter Joshua Nwali"
             title="Associate"
