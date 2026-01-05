@@ -68,8 +68,7 @@ export default function About() {
           </h2>
           <p className="text-gray-700 md:w-[75%]">
             Our primary constituency is youth, defined as individuals between
-            the <br />
-            ages of 15 and 35 years who are passionate about governance, <br />
+            the ages of 15 and 35 years who are passionate about governance,
             public leadership, and policy reform
           </p>
         </div>

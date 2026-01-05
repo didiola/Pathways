@@ -3,23 +3,25 @@ import Link from "next/link";
 import Image from "next/image";
 // import hands from "../assets/image/fdiphoto.png";
 import ProjectCard from "@/app/components/reusable/projectcard";
-import hands from "../../assets/image/groupie.png";
+import tpc from "../../assets/image/tpc.jpg";
+import pcy from "../../assets/image/PCY.jpg";
+import tph from "../../assets/image/TPH.jpg";
 
 const projects = [
   {
     title: "The Policy Challenge",
-    image: hands,
+    image: tpc,
     href: "/works/programs/the-policy-challenge",
   },
   {
-    title: "School Summit",
-    image: hands,
-    href: "/works/programs/school-summit",
+    title: "Policy Conference for Youth",
+    image: pcy,
+    href: "/works/programs/policy-conference",
   },
   {
-    title: "Playbook for Startups & SMEs",
-    image: hands,
-    href: "/works/programs/startups-smes-playbook",
+    title: "The Policy Hub",
+    image: tph,
+    href: "/works/programs/policy-hub",
   },
 ];
 

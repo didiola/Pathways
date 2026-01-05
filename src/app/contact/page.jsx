@@ -25,10 +25,10 @@ export default function Contact() {
             <span>
               Email:{" "}
               <a
-                href="mailto:contact@policychanllege.com"
+                href="mailto:info@futurepathways.ng"
                 className="underline text-[#231F20]"
               >
-                info@futurepathways.africa
+                info@futurepathways.ng
               </a>
             </span>
           </div>
