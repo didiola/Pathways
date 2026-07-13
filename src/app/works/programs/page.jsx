@@ -11,12 +11,12 @@ const projects = [
   {
     title: "The Policy Challenge",
     image: tpc,
-    href: "/works/programs/the-policy-challenge",
+    href: "https://www.policychallenge.com/",
   },
   {
     title: "Policy Conference for Youth",
     image: pcy,
-    href: "/works/programs/policy-conference",
+    href: "https://pcy26.vercel.app/",
   },
   {
     title: "The Policy Hub",

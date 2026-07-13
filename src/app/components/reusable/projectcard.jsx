@@ -8,11 +8,10 @@ export default function ProjectCard({
   href,
   imageClassName = "w-full h-76 object-cover",
 }) {
-  return (
-    <Link
-      href={href}
-      className="group block rounded-xl overflow-hidden  hover:shadow-lg transition-all duration-300"
-    >
+  const isExternal = href.startsWith("http");
+
+  const cardContent = (
+    <>
       <Image src={image} alt={title} className={imageClassName} />
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-2">{title}</h3>
@@ -21,6 +20,28 @@ export default function ProjectCard({
           <span className="ml-1">→</span>
         </span>
       </div>
+    </>
+  );
+
+  const cardStyles =
+    "group block rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300";
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cardStyles}
+      >
+        {cardContent}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={cardStyles}>
+      {cardContent}
     </Link>
   );
 }
