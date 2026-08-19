@@ -7,10 +7,20 @@ import arise from "./assets/image/arisetv.png";
 import businessDay from "./assets/image/businessday.png";
 import thisDay from "./assets/image/thisday.png";
 import nta from "./assets/image/nta.png";
-import hands from "./assets/image/fdiphoto.png";
+import hands from "./assets/image/foundercam.jpeg";
 import director from "./assets/image/director.jpg";
 import panel from "./assets/image/panel.jpg";
 import team from "./assets/image/team.jpg";
+import conference from "./assets/image/pcy2026.jpeg";
+import speaker from "./assets/image/speakers.jpeg";
+import winners from "./assets/image/winners.jpeg";
+import audience from "./assets/image/audience.jpeg";
+import delegate from "./assets/image/delegates.jpeg";
+import seyi from "./assets/image/seyiadisa.jpeg";
+import sme from "./assets/image/smetrust.jpeg";
+import nicao from "./assets/image/teamnicao.jpeg";
+import astrum from "./assets/image/teamastrum.jpeg";
+import adisa from "./assets/image/seyiadisa2.jpeg";
 
 const programs = [
   {
@@ -56,7 +66,17 @@ const newsLogos = [
 const gallerySlides = [
   { src: hands, alt: "Hands stacked over a work table" },
   { src: panel, alt: "Policy event panel session" },
-  { src: team, alt: "FPDI team members" },
+  { src: conference, alt: "FPDI team members" },
+  { src: speaker, alt: "Policy speakers at the event" },
+  { src: winners, alt: "Team mates who won prizes" },
+  { src: nicao, alt: "Members of team Nicao" },
+  { src: sme, alt: "Members of team SME" },
+  { src: astrum, alt: "Members of team Astrum" },
+  { src: seyi, alt: "Honorable Seyi Adisa's image while speaking" },
+  { src: adisa, alt: "Honorable Seyi Adisa" },
+  { src: delegate, alt: "Members of the delegation" },
+  { src: audience, alt: "Members of the audience" },
+  { src: team, alt: "FPDI team member" },
 ];
 
 const timelineItems = [
@@ -161,7 +181,9 @@ export default function Home() {
       <section className="relative flex min-h-[560px] flex-col items-center overflow-hidden px-3 pb-8 pt-28 text-center md:min-h-[980px] md:px-6 md:pb-20 md:pt-56">
         <AfricaOutline className="absolute right-[-6rem] top-20 h-[300px] w-[260px] opacity-70 md:right-[-10rem] md:top-32 md:h-[760px] md:w-[620px]" />
         <div className="relative z-10 mx-auto max-w-5xl">
-          <p className="mb-3 text-[10px] font-semibold md:mb-8 md:text-xl">Welcome to FPDI</p>
+          <p className="mb-3 text-[10px] font-semibold md:mb-8 md:text-xl">
+            Welcome to FPDI
+          </p>
           <h1 className="mx-auto max-w-[320px] text-xl font-bold leading-[1.12] tracking-normal md:max-w-5xl md:text-7xl">
             Co-creating policy towards a more prosperous Africa
           </h1>
@@ -181,7 +203,9 @@ export default function Home() {
               <div className="absolute inset-x-0 top-1/2 h-20 -translate-y-1/2 bg-white/15" />
               <span
                 className={`relative inline-block border border-current px-1 font-bold leading-none text-black transition-all duration-700 ${
-                  program.offset === 0 ? "text-base md:text-2xl" : "text-base opacity-70"
+                  program.offset === 0
+                    ? "text-base md:text-2xl"
+                    : "text-base opacity-70"
                 }`}
               >
                 {program.eyebrow}
@@ -268,7 +292,9 @@ export default function Home() {
                       left ? "md:col-start-1" : "md:col-start-2"
                     } ${left ? "" : "md:ml-auto"}`}
                   >
-                    <h3 className="mb-4 text-xl font-bold md:mb-8 md:text-3xl">{item.year}</h3>
+                    <h3 className="mb-4 text-xl font-bold md:mb-8 md:text-3xl">
+                      {item.year}
+                    </h3>
                     <div className="space-y-4 text-[11px] font-medium leading-5 text-[#4b4b4b] md:space-y-6 md:text-lg md:leading-7">
                       {item.paragraphs.map((paragraph) => (
                         <p key={paragraph}>{paragraph}</p>

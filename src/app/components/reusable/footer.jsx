@@ -20,12 +20,12 @@ export default function Footer() {
         <div className="grid px-6 py-3 md:grid-cols-6 md:p-0">
           <FooterCell className="md:col-span-2">
             <Link
-              href="https://drive.google.com/file/d/1BiK-EwbJM8LRiwsB73e1JIZKQ3NT1Fsv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1P9-EtMZcop__grJpI2a-UceR0et7VinX/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-semibold text-green-700 md:text-xl"
             >
-              Download Brochure
+              Download Compendium
             </Link>
           </FooterCell>
           <FooterCell className="md:col-span-2">
@@ -70,7 +70,7 @@ export default function Footer() {
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#fff9ed] md:h-10 md:w-10">
                 <FaTwitter className="h-3.5 w-3.5 md:h-[18px] md:w-[18px]" />
               </span>
-              X<span className="text-gray-500">(formely Twitter)</span>
+              X
             </a>
           </FooterCell>
           <FooterCell className="md:col-span-2">
@@ -106,12 +106,14 @@ export default function Footer() {
             <div className="flex min-w-0 items-start gap-3 md:gap-5">
               <Mail className="mt-1 h-4 w-4 shrink-0 text-gray-500 md:h-7 md:w-7" />
               <div className="min-w-0">
-                <p className="mb-1 text-xs font-semibold text-gray-500 md:mb-2 md:text-base">Mail</p>
+                <p className="mb-1 text-xs font-semibold text-gray-500 md:mb-2 md:text-base">
+                  Mail
+                </p>
                 <a
                   href="mailto:contact@policychallenge.com"
                   className="block max-w-full whitespace-nowrap text-xs font-medium leading-5 text-green-700 md:text-lg md:leading-8"
                 >
-                  contact@policychallenge.com
+                  info@futurepathways.ng
                 </a>
               </div>
             </div>
@@ -128,7 +130,9 @@ export default function Footer() {
 
 function FooterCell({ children, className = "" }) {
   return (
-    <div className={`flex min-h-0 items-center border-b border-[#e5e5e5] px-0 py-2 text-xs md:min-h-24 md:border-r md:px-10 md:py-6 md:text-base ${className}`}>
+    <div
+      className={`flex min-h-0 items-center border-b border-[#e5e5e5] px-0 py-2 text-xs md:min-h-24 md:border-r md:px-10 md:py-6 md:text-base ${className}`}
+    >
       {children}
     </div>
   );

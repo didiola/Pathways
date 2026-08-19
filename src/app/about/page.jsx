@@ -92,15 +92,15 @@ export default function About() {
           <TeamCard
             name="Arinola Addo Daniel"
             title="Executive Director, FPDI"
-            bio="Arinola stand at the intersection of policy, people, projects and products. An emerging leader who has frontier many enterprises, He streamlines work plans, programs, and end-to-end processes in nonprofits, municipal governments, startups, and education."
+            bio="Arinola is a Strategy & Operations professional and Public Policy Advocate, with experience spanning technology, consulting, governance, and youth development. He has led initiatives focused on policy reform, digital empowerment, leadership development, and ecosystem growth across Africa."
             imgSrc={arinola}
           />
-          <TeamCard
+          {/* <TeamCard
             name="Chimchetaram Chuka-Okoli"
             title="Director of Communications"
             bio="Chimchetaram is a Communications and Governance Specialist, Human Capital Strategist, Civic Engagement."
             imgSrc={cheta}
-          />
+          /> */}
           {/* <TeamCard
             name="Peter Joshua Nwali"
             title="Associate"
