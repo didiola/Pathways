@@ -5,7 +5,7 @@ export const compendiums = [
     year: "2025",
     title: "2025 Compendium",
     description:
-      "Policy papers and highlights from the 2025 FPDI Policy Challenge.",
+      "Rebuilding Trust, One Policy at a Time: policy ideas from Nigeria’s next generation of leaders.",
     file: "/compendium/fpdi-compendium-2025.pdf",
     downloadName: "FPDI-Compendium-2025.pdf",
     href: "/compendium/2025",
@@ -14,7 +14,7 @@ export const compendiums = [
     year: "2026",
     title: "2026 Compendium",
     description:
-      "Policy papers and highlights from the 2026 FPDI Policy Challenge.",
+      "Rebuilding Trust, One Policy at a Time: policy ideas from Nigeria’s next generation of leaders.",
     file: "/compendium/fpdi-compendium-2026.pdf",
     downloadName: "FPDI-Compendium-2026.pdf",
     href: "/compendium/2026",
