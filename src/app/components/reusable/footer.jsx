@@ -20,12 +20,10 @@ export default function Footer() {
         <div className="grid px-6 py-3 md:grid-cols-6 md:p-0">
           <FooterCell className="md:col-span-2">
             <Link
-              href="https://drive.google.com/file/d/1P9-EtMZcop__grJpI2a-UceR0et7VinX/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/compendium"
               className="text-xs font-semibold text-green-700 md:text-xl"
             >
-              Download Compendium
+              Compendium
             </Link>
           </FooterCell>
           <FooterCell className="md:col-span-2">
