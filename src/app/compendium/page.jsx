@@ -63,10 +63,14 @@ function CompendiumCard({ item }) {
         </p>
 
         <div className="mt-auto flex flex-wrap items-center gap-3">
-          <span className="bg-gradient-to-r from-green-600 to-green-500 group-hover:opacity-90 transition text-white rounded-full py-2.5 px-5 inline-flex items-center gap-2 text-sm md:text-base">
+          <Link
+            href={item.href}
+            aria-label={`View the ${item.title}`}
+            className="relative z-10 bg-gradient-to-r from-green-600 to-green-500 hover:opacity-90 transition text-white rounded-full py-2.5 px-5 inline-flex items-center gap-2 text-sm md:text-base"
+          >
             View
             <ArrowUpRight size={18} />
-          </span>
+          </Link>
           <a
             href={item.file}
             download={item.downloadName}
