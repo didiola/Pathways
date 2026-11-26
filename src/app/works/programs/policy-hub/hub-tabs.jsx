@@ -151,7 +151,7 @@ function Proposals({ hub }) {
   return (
     <>
       <PanelHeading title="Policy Proposals">
-        Proposals submitted to The Policy Challenge from {hub.confirmed ? hub.institution : "this hub"}.
+        Proposals submitted to The Policy Challenge from {hub.institution}.
       </PanelHeading>
 
       {hasData ? (

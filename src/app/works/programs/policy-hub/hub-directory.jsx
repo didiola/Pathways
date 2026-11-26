@@ -140,11 +140,6 @@ function HubCard({ hub }) {
 
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-semibold text-lg leading-snug">{hub.institution}</h3>
-        {!hub.confirmed && (
-          <p className="mt-1 text-xs font-medium uppercase tracking-wide text-[#a67714]">
-            Institution to be confirmed
-          </p>
-        )}
         <p className="mt-1 text-sm text-gray-500">{hub.hubName}</p>
 
         <div className="mt-auto pt-5">

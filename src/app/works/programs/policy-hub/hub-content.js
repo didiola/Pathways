@@ -9,8 +9,8 @@
 //   projects:   [{ title, description }]
 //   events:     [{ title, date: "YYYY-MM-DD", location, description, href }]
 //
-// `confirmed: false` marks hubs whose host institution is still to be
-// confirmed; `institution` then names the location instead.
+// Hubs whose host institution is not yet confirmed (spreadsheet S/N 32 Oyo,
+// 34 Bauchi, 53 Benue, 63 "State University") are left out until confirmed.
 
 const hubs = [
   ["1", "unilag", "UNILAG", "University of Lagos", "Fatiu Ahmed", "unilag.policyhub@futurepathways.ng"],
@@ -44,11 +44,9 @@ const hubs = [
   ["29", "afit", "AFIT", "Air Force Institute of Technology"],
   ["30", "oau", "OAU", "Obafemi Awolowo University", "Precious Boluwatife Alli", "oau.policyhub@futurepathways.ng"],
   ["31", "aaua", "AAUA", "Adekunle Ajasin University"],
-  ["32", "oyo", "Oyo", "Oyo", null, null, false],
   ["33", "makurdi", "Makurdi", "University of Agriculture, Makurdi"],
-  ["34", "bauchi", "Bauchi", "Bauchi", null, null, false],
   ["35", "timit", "TIMIT", "Thomas McGettrick Institute of Technology, Ogoja"],
-  ["36", "funaab", "FUNAAB", "Federal University of Agriculture, Abeokuta", "Ibrahim Ogunsetan Olajuwon", null],
+  ["36", "funaab", "FUNAAB", "Federal University of Agriculture, Abeokuta", "Ibrahim Ogunsetan Olajuwon", "funaab.policyhub@futurepathways.ng"],
   ["37", "ebsu", "EBSU", "Ebonyi State University"],
   ["38", "sazu", "SAZU", "Sa'adu Zungur University"],
   ["39", "fuwukari", "FUWUKARI", "Federal University Wukari", "Oputa Samuel Daberechukwu", "fuwukari.policyhub@futurepathways.ng"],
@@ -64,8 +62,7 @@ const hubs = [
   ["49", "futminna", "FUTMINNA", "Federal University of Technology, Minna"],
   ["50", "fulokoja", "FU Lokoja", "Federal University Lokoja"],
   // S/N 51 in the spreadsheet repeats Adekunle Ajasin University (S/N 31).
-  ["52", "taraba", "Taraba", "Taraba State University", "Iweren Blessing Kwagh", null],
-  ["53", "benue", "Benue", "Benue", null, null, false],
+  ["52", "taraba", "Taraba", "Taraba State University", "Iweren Blessing Kwagh", "tsu.policyhub@futurepathways.ng"],
   ["54", "redeemers", "Redeemer's", "Redeemer's University"],
   ["55", "uniben", "UNIBEN", "University of Benin"],
   ["56", "kwasu", "KWASU", "Kwara State University"],
@@ -75,12 +72,11 @@ const hubs = [
   ["60", "emmanuel-alayande", "Emmanuel Alayande", "Emmanuel Alayande University of Education"],
   ["61", "umyu", "UMYU", "Umaru Musa Yar'Adua University"],
   ["62", "jabu", "JABU", "Joseph Ayo Babalola University"],
-  ["63", "state-university", "State University", "State University", null, null, false],
   ["64", "coou", "COOU", "Chukwuemeka Odumegwu Ojukwu University"],
   ["65", "nij", "NIJ", "Nigerian Institute of Journalism, Yaba"],
   ["66", "babcock", "Babcock", "Babcock University"],
   ["67", "miva", "Miva", "Miva Open University"],
-  ["68", "veritas", "VERITAS", "Veritas University Abuja", "Dzarma Samuel Musa", null],
+  ["68", "veritas", "VERITAS", "Veritas University Abuja", "Dzarma Samuel Musa", "veritas.policyhub@futurepathways.ng"],
 ];
 
 // Card accent colours, taken from the home page programme tiles.
@@ -92,13 +88,12 @@ const tones = [
 ];
 
 export const policyHubs = hubs.map(
-  ([sn, slug, code, institution, director = null, email = null, confirmed = true], index) => ({
+  ([sn, slug, code, institution, director = null, email = null], index) => ({
     sn: Number(sn),
     slug,
     code,
     hubName: `Policy Hub – ${code}`,
     institution,
-    confirmed,
     director,
     email,
     tone: tones[index % tones.length],
@@ -111,6 +106,10 @@ export const policyHubs = hubs.map(
 
 export const FPDI_EMAIL = "info@futurepathways.ng";
 
+// Paste the hub registration form link here when it is ready. While it is
+// null, the "Join the Hub" tab sends registrations by email instead.
+export const REGISTRATION_FORM_URL = null;
+
 export function getHub(slug) {
   return policyHubs.find((hub) => hub.slug === slug);
 }
@@ -121,8 +120,4 @@ export function getAdjacentHubs(slug) {
     previous: index > 0 ? policyHubs[index - 1] : null,
     next: index < policyHubs.length - 1 ? policyHubs[index + 1] : null,
   };
-}
-
-export function displayName(hub) {
-  return hub.confirmed ? hub.institution : `${hub.institution} (institution to be confirmed)`;
 }

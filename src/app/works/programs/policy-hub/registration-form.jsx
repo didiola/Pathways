@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight, Check, Copy } from "lucide-react";
-import { FPDI_EMAIL } from "./hub-content";
+import { FPDI_EMAIL, REGISTRATION_FORM_URL } from "./hub-content";
 
 const levels = ["100 Level", "200 Level", "300 Level", "400 Level", "500 Level", "600 Level", "Postgraduate", "Staff / Faculty"];
 
@@ -11,6 +11,32 @@ const inputClass =
 // The site has no form backend, so the form composes an email to the hub
 // (or to FPDI when the hub has no address yet) in the visitor's mail app.
 export default function RegistrationForm({ hub }) {
+  if (REGISTRATION_FORM_URL) return <ExternalRegistration hub={hub} />;
+  return <EmailRegistration hub={hub} />;
+}
+
+function ExternalRegistration({ hub }) {
+  return (
+    <div className="mx-auto max-w-xl py-6 text-center md:py-10">
+      <h2 className="text-2xl font-bold md:text-4xl">Join the Hub</h2>
+      <p className="mt-3 text-gray-600">
+        Become a member of {hub.hubName} and work with fellow students on
+        localized policy development, leadership training and campus events.
+      </p>
+      <a
+        href={REGISTRATION_FORM_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 inline-flex items-center gap-2 rounded-full border border-white bg-gradient-to-r from-green-600 to-green-500 px-6 py-3 text-white transition hover:opacity-90"
+      >
+        Open the registration form
+        <ArrowUpRight size={18} />
+      </a>
+    </div>
+  );
+}
+
+function EmailRegistration({ hub }) {
   const recipient = hub.email || FPDI_EMAIL;
   const [submitted, setSubmitted] = useState(null);
   const [copied, setCopied] = useState(false);
@@ -19,7 +45,7 @@ export default function RegistrationForm({ hub }) {
     event.preventDefault();
     const data = Object.fromEntries(new FormData(event.currentTarget));
     const body = [
-      `I would like to join ${hub.hubName}${hub.confirmed ? ` at ${hub.institution}` : ""}.`,
+      `I would like to join ${hub.hubName} at ${hub.institution}.`,
       "",
       `Full name: ${data.name}`,
       `Email: ${data.email}`,

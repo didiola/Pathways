@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Mail, UserRound } from "lucide-react";
 import Reveal from "../reveal";
 import HubTabs from "../hub-tabs";
-import { displayName, getAdjacentHubs, getHub, policyHubs } from "../hub-content";
+import { getAdjacentHubs, getHub, policyHubs } from "../hub-content";
 
 export const dynamicParams = false;
 
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   if (!hub) return {};
   return {
     title: `${hub.hubName} | Future Pathways Development`,
-    description: `The FPDI Policy Hub at ${displayName(hub)}: hub director, contacts, policy proposals, open house, projects and events.`,
+    description: `The FPDI Policy Hub at ${hub.institution}: hub director, contacts, policy proposals, open house, projects and events.`,
   };
 }
 
@@ -46,11 +46,6 @@ export default async function PolicyHubDetailPage({ params }) {
           <Reveal as="h1" delay={120} className="mt-2 md:text-7xl text-4xl font-bold leading-tight">
             {hub.institution}.
           </Reveal>
-          {!hub.confirmed && (
-            <Reveal as="p" delay={160} className="mt-3 text-gray-500">
-              The host institution for this hub is still to be confirmed.
-            </Reveal>
-          )}
         </div>
       </section>
 

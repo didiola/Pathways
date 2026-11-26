@@ -36,7 +36,7 @@ function PillRow({ hubs, duplicate = false }) {
       {hubs.map((hub) => (
         <li key={hub.slug} className="flex items-center">
           <span className="whitespace-nowrap rounded-full border border-[#e5e5e5] bg-white px-4 py-1.5 text-xs text-[#4b4b4b] md:px-5 md:py-2 md:text-sm">
-            {hub.confirmed ? hub.institution : `Policy Hub – ${hub.code}`}
+            {hub.institution}
           </span>
           <span className="mx-3 h-2 w-2 shrink-0 rounded-full bg-[#ffc20a] md:mx-4" aria-hidden="true" />
         </li>
