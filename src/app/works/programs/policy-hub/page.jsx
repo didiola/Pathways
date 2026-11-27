@@ -11,8 +11,6 @@ export const metadata = {
 };
 
 export default function PolicyHubPage() {
-  const withDirector = policyHubs.filter((hub) => hub.director).length;
-
   return (
     <div className="md:mt-[10rem] mt-[5rem]">
       <section className="md:py-16 py-6 border-b-1 border-gray-300">
@@ -43,15 +41,8 @@ export default function PolicyHubPage() {
       </section>
 
       <section className="max-w-6xl md:mx-auto mx-6 px-1 py-10 md:py-16">
-        <Reveal className="mb-10 grid grid-cols-2 gap-4 md:mb-14 md:grid-cols-3 md:gap-6">
+        <Reveal className="mb-8 grid gap-4 sm:grid-cols-2 md:mb-10 md:grid-cols-3 md:gap-6">
           <Stat value={policyHubs.length} label="Policy Hubs" tone="bg-[#cfe7d6] text-[#627768]" />
-          <Stat value={withDirector} label="Hub directors" tone="bg-[#ffc20a] text-[#8a6a00]" />
-          <Stat
-            value={policyHubs.length - withDirector}
-            label="Hubs appointing directors"
-            tone="bg-[#87d8f3] text-black"
-            className="col-span-2 md:col-span-1"
-          />
         </Reveal>
 
         <HubDirectory hubs={policyHubs} />
@@ -60,9 +51,9 @@ export default function PolicyHubPage() {
   );
 }
 
-function Stat({ value, label, tone, className = "" }) {
+function Stat({ value, label, tone }) {
   return (
-    <div className={`rounded-xl p-5 md:p-6 ${tone} ${className}`}>
+    <div className={`rounded-xl p-5 md:p-6 ${tone}`}>
       <p className="text-4xl font-bold leading-none md:text-5xl">{value}</p>
       <p className="mt-2 text-sm font-medium md:text-base">{label}</p>
     </div>

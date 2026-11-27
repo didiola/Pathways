@@ -4,61 +4,22 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Search, UserRound, X } from "lucide-react";
 import Reveal from "./reveal";
 
-const filters = [
-  { id: "all", label: "All hubs" },
-  { id: "director", label: "With a hub director" },
-  { id: "establishing", label: "Director to be appointed" },
-];
-
 export default function HubDirectory({ hubs }) {
   const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState("all");
-
-  const counts = useMemo(
-    () => ({
-      all: hubs.length,
-      director: hubs.filter((h) => h.director).length,
-      establishing: hubs.filter((h) => !h.director).length,
-    }),
-    [hubs]
-  );
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
     return hubs.filter((hub) => {
-      if (filter === "director" && !hub.director) return false;
-      if (filter === "establishing" && hub.director) return false;
       if (!q) return true;
       return [hub.institution, hub.code, hub.hubName, hub.director]
         .filter(Boolean)
         .some((value) => value.toLowerCase().includes(q));
     });
-  }, [hubs, query, filter]);
+  }, [hubs, query]);
 
   return (
     <div>
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Filter hubs">
-          {filters.map((f) => (
-            <button
-              key={f.id}
-              type="button"
-              onClick={() => setFilter(f.id)}
-              aria-pressed={filter === f.id}
-              className={`rounded-full border px-4 py-2 text-sm transition-colors duration-300 ${
-                filter === f.id
-                  ? "border-green-600 bg-gradient-to-r from-green-600 to-green-500 text-white"
-                  : "border-[#e5e5e5] bg-white text-[#4b4b4b] hover:border-green-600 hover:text-green-700"
-              }`}
-            >
-              {f.label}
-              <span className={`ml-2 text-xs ${filter === f.id ? "text-white/80" : "text-gray-400"}`}>
-                {counts[f.id]}
-              </span>
-            </button>
-          ))}
-        </div>
-
+      <div className="mb-6">
         <label className="relative block md:w-80">
           <span className="sr-only">Search institutions</span>
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
@@ -94,13 +55,10 @@ export default function HubDirectory({ hubs }) {
           </p>
           <button
             type="button"
-            onClick={() => {
-              setQuery("");
-              setFilter("all");
-            }}
+            onClick={() => setQuery("")}
             className="mt-6 rounded-full border border-green-600 px-5 py-2.5 text-sm text-green-700 transition hover:bg-green-50"
           >
-            Show all hubs
+            Clear search
           </button>
         </div>
       ) : (
